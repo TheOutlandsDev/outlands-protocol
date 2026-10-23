@@ -1,0 +1,21 @@
+[package]
+name = "out-storage"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[features]
+conformance = []
+
+[dependencies]
+blake3.workspace = true
+out-codec = { path = "../out-codec" }
+out-consensus = { path = "../out-consensus" }
+out-primitives = { path = "../out-primitives" }
+out-state = { path = "../out-state" }
+redb = { version = "=4.2.0", default-features = true }
+rocksdb = { version = "=0.25.0", default-features = false }
+
+[lints]
+workspace = true
