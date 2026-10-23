@@ -1,0 +1,34 @@
+{
+  "format_version": 0,
+  "id": "block.header.devnet-genesis-001",
+  "kind": "block_header_encoding",
+  "status": "independently_verified",
+  "description": "Canonical 223-byte mined devnet genesis header.",
+  "spec_refs": ["docs/wire-format-v0.md#41-fixed-block-header"],
+  "inputs": {
+    "header_codec": 0,
+    "consensus_version": 0,
+    "chain_id_hex": "fb2651b3fba992e8836d846280745eb7a21d4962d4306858bbfb42690bde49c4",
+    "network_id": 3,
+    "genesis_commitment_hex": "baa26e3bdda0a7b3196e89367f32a9d05558ea5ea196875f30880f055e5226a7",
+    "height": 0,
+    "parent_block_id_hex": "0000000000000000000000000000000000000000000000000000000000000000",
+    "timestamp": 1788048000,
+    "target_hex": "000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+    "tx_root_hex": "da2fb959f81d652879472f8c56076e63a2fb3587dda94754f316328e7ec43140",
+    "state_root_hex": "3d30a2588a2f688edd9b29af2bb3b522db2deb731709dbfb53fadefab69c2147",
+    "nonce": 2757
+  },
+  "expected": {
+    "header_length": {"encoding": "integer", "value": 223, "verification": "independently_verified"},
+    "header_hex": {"encoding": "hex", "value": "000000fb2651b3fba992e8836d846280745eb7a21d4962d4306858bbfb42690bde49c400000003baa26e3bdda0a7b3196e89367f32a9d05558ea5ea196875f30880f055e5226a700000000000000000000000000000000000000000000000000000000000000000000000000000000000000006a937280000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffda2fb959f81d652879472f8c56076e63a2fb3587dda94754f316328e7ec431403d30a2588a2f688edd9b29af2bb3b522db2deb731709dbfb53fadefab69c21470000000000000ac5", "verification": "independently_verified"},
+    "block_id_hex": {"encoding": "hex", "value": "bd31ae362fa769dab143ef308f7706a7bea9ae671c8fe21793cd8200d73135c9", "verification": "independently_verified"}
+  },
+  "verification": {
+    "method": "Complete descriptor/header bytes matched between independent Python and C encoders; both hash paths passed official BLAKE3 vectors.",
+    "implementations": [
+      {"name": "out_ref.py", "language": "Python", "version": "sha256:b9874f21ebf3ef727e7733c1dff5d33f5da2239e73fafdf86eb6f85b631cdf73", "result_digest": null},
+      {"name": "out_ref.c plus official BLAKE3 C", "language": "C", "version": "wrapper-sha256:7052692530ca4df7dd2cc86079c94bcefccb847d12784fb67a9442ad5c5869ac; blake3-1.8.7-f3149ec", "result_digest": null}
+    ]
+  }
+}

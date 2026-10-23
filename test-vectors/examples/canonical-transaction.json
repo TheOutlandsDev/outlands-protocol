@@ -1,0 +1,41 @@
+{
+  "format_version": 0,
+  "id": "tx.canonical.regular.devnet-001",
+  "kind": "canonical_transaction_encoding",
+  "status": "independently_verified",
+  "description": "Canonical signed regular transaction on devnet using public deterministic test seeds.",
+  "spec_refs": ["docs/wire-format-v0.md#3-transaction-formats"],
+  "parameters": {"P_MAX_MEMO_BYTES": 256, "ratification": "OUT-LIMITS-v0", "seeds_are_public_test_data": true},
+  "inputs": {
+    "envelope_codec": 0,
+    "tx_kind": 0,
+    "tx_version": 0,
+    "chain_id_hex": "fb2651b3fba992e8836d846280745eb7a21d4962d4306858bbfb42690bde49c4",
+    "network_id": 3,
+    "genesis_commitment_hex": "baa26e3bdda0a7b3196e89367f32a9d05558ea5ea196875f30880f055e5226a7",
+    "sender_recipient_hex": "0003a107bff3ce10be1d70dd18e74bc09967e4d6309ba50d5f1ddc8664125531b8",
+    "nonce": 0,
+    "recipient_hex": "0029acbae141bccaf0b22e1a94d34d0bc7361e526d0bfe12c89794bc9322966dd7",
+    "amount": 123456789,
+    "fee": 1000,
+    "valid_from_height": 1,
+    "expires_at_height": 1000,
+    "memo_hex": "4f555420766563746f72",
+    "auth_scheme": 0,
+    "auth_public_key_hex": "03a107bff3ce10be1d70dd18e74bc09967e4d6309ba50d5f1ddc8664125531b8",
+    "auth_signature_hex": "4db0b309e83e23461a59160d12f3a37386b6a4487fc1c0e0686ed031ba34a001bf24e6a71333e0a4f4df223d388623b0ec8b07ebc79ad9d67aecb4c52981ec0b"
+  },
+  "expected": {
+    "body_len": {"encoding": "integer", "value": 188, "verification": "independently_verified"},
+    "transaction_len": {"encoding": "integer", "value": 294, "verification": "independently_verified"},
+    "transaction_body_hex": {"encoding": "hex", "value": "0000fb2651b3fba992e8836d846280745eb7a21d4962d4306858bbfb42690bde49c400000003baa26e3bdda0a7b3196e89367f32a9d05558ea5ea196875f30880f055e5226a70003a107bff3ce10be1d70dd18e74bc09967e4d6309ba50d5f1ddc8664125531b800000000000000000029acbae141bccaf0b22e1a94d34d0bc7361e526d0bfe12c89794bc9322966dd700000000075bcd1500000000000003e8000000000000000100000000000003e8000a4f555420766563746f72", "verification": "independently_verified"},
+    "transaction_hex": {"encoding": "hex", "value": "0000000000bc0000fb2651b3fba992e8836d846280745eb7a21d4962d4306858bbfb42690bde49c400000003baa26e3bdda0a7b3196e89367f32a9d05558ea5ea196875f30880f055e5226a70003a107bff3ce10be1d70dd18e74bc09967e4d6309ba50d5f1ddc8664125531b800000000000000000029acbae141bccaf0b22e1a94d34d0bc7361e526d0bfe12c89794bc9322966dd700000000075bcd1500000000000003e8000000000000000100000000000003e8000a4f555420766563746f720062000003a107bff3ce10be1d70dd18e74bc09967e4d6309ba50d5f1ddc8664125531b84db0b309e83e23461a59160d12f3a37386b6a4487fc1c0e0686ed031ba34a001bf24e6a71333e0a4f4df223d388623b0ec8b07ebc79ad9d67aecb4c52981ec0b", "verification": "independently_verified"}
+  },
+  "verification": {
+    "method": "Python encoded and signed from seed 00..1f; C independently encoded and signed through OpenSSL EVP Ed25519. Complete body, envelope, public key, signature, and intermediate bundle matched.",
+    "implementations": [
+      {"name": "out_ref.py", "language": "Python", "version": "sha256:b9874f21ebf3ef727e7733c1dff5d33f5da2239e73fafdf86eb6f85b631cdf73", "result_digest": "21528d5476ab75154427117b34d65d82ce73bb1e981489619e039cdf02c78ae6"},
+      {"name": "out_vectors.c plus OpenSSL EVP", "language": "C", "version": "sha256:484129ff7cac67ffbfe5e9b738852b4e12dfef59abd36a0059241c7cd16c3f52; OpenSSL-3.0.2", "result_digest": "21528d5476ab75154427117b34d65d82ce73bb1e981489619e039cdf02c78ae6"}
+    ]
+  }
+}

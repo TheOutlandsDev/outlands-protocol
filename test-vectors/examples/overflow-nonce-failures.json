@@ -1,0 +1,26 @@
+{
+  "format_version": 0,
+  "id": "state.nonce-overflow.invalid-001",
+  "kind": "overflow_or_nonce_failure",
+  "status": "independently_verified",
+  "description": "A sender at the maximum u64 nonce cannot apply another transaction; failure leaves parent state unchanged.",
+  "spec_refs": ["docs/state-model-v0.md#4-nonce-and-regular-transaction-transition"],
+  "parameters": {"P_MAX_MONEY": "2102400000000000"},
+  "inputs": {
+    "sender_pre": {"balance": 10, "nonce_decimal": "18446744073709551615"},
+    "transaction": {"nonce_decimal": "18446744073709551615", "amount": 1, "fee": 0},
+    "arithmetic": "checked u64 nonce increment; no wrapping"
+  },
+  "expected": {
+    "accepted": {"encoding": "boolean", "value": false, "verification": "independently_verified"},
+    "error": {"encoding": "error_code", "value": "NONCE_OVERFLOW", "verification": "independently_verified"},
+    "parent_state_unchanged": {"encoding": "boolean", "value": true, "verification": "independently_verified"}
+  },
+  "verification": {
+    "method": "Independent Python and C checked-next-nonce functions executed the u64 maximum boundary and returned failure without a result nonce.",
+    "implementations": [
+      {"name": "out_ref.py", "language": "Python", "version": "sha256:b9874f21ebf3ef727e7733c1dff5d33f5da2239e73fafdf86eb6f85b631cdf73", "result_digest": "21528d5476ab75154427117b34d65d82ce73bb1e981489619e039cdf02c78ae6"},
+      {"name": "out_vectors.c", "language": "C", "version": "sha256:484129ff7cac67ffbfe5e9b738852b4e12dfef59abd36a0059241c7cd16c3f52", "result_digest": "21528d5476ab75154427117b34d65d82ce73bb1e981489619e039cdf02c78ae6"}
+    ]
+  }
+}

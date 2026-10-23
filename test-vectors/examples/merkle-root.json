@@ -1,0 +1,30 @@
+{
+  "format_version": 0,
+  "id": "merkle.two-transactions.devnet-001",
+  "kind": "transaction_merkle_root",
+  "status": "independently_verified",
+  "description": "Height-1 Merkle tree containing the reward transaction at index 0 and one regular transaction at index 1.",
+  "spec_refs": ["docs/wire-format-v0.md#5-transaction-merkle-commitment"],
+  "inputs": {
+    "transaction_ids_hex": [
+      "51b4a115df0f7719829f2588379695413e76b4f3d252ed74eac4690ef804d814",
+      "8f027a546e612be5185e6ed78932f3b7f0f14749e6d9ec1c378144c4343a9c13"
+    ],
+    "leaf_count": 2,
+    "leaf_context_ascii": "OUT Consensus v0 2026-08-30 transaction Merkle leaf",
+    "node_context_ascii": "OUT Consensus v0 2026-08-30 transaction Merkle internal node",
+    "leaf_material_formula": "00 || 01 || BE32(index) || transaction_id",
+    "node_material_formula": "00 || BE16(height) || left || right"
+  },
+  "expected": {
+    "leaf_hashes_hex": {"encoding": "object", "value": ["b9f8144af04fff5a03b25b60f4635fe1fd205a7ff76013e803faf6bad9143079", "033ce606e17c03c54df04ceb18e7b949a0457094c4c314ff6edbb26b82ff6bd6"], "verification": "independently_verified"},
+    "transaction_root_hex": {"encoding": "hex", "value": "03064f29a3a594ff910cf4d42f1f1fb332a43fb1559befd1928a60cc53d39cef", "verification": "independently_verified"}
+  },
+  "verification": {
+    "method": "Independent Python and C implementations derived both indexed leaves and the height-1 internal node from transaction IDs.",
+    "implementations": [
+      {"name": "out_ref.py", "language": "Python", "version": "sha256:b9874f21ebf3ef727e7733c1dff5d33f5da2239e73fafdf86eb6f85b631cdf73", "result_digest": "21528d5476ab75154427117b34d65d82ce73bb1e981489619e039cdf02c78ae6"},
+      {"name": "out_vectors.c plus official BLAKE3 C", "language": "C", "version": "sha256:484129ff7cac67ffbfe5e9b738852b4e12dfef59abd36a0059241c7cd16c3f52; blake3-1.8.7-f3149ec", "result_digest": "21528d5476ab75154427117b34d65d82ce73bb1e981489619e039cdf02c78ae6"}
+    ]
+  }
+}

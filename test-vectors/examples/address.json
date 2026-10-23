@@ -1,0 +1,27 @@
+{
+  "format_version": 0,
+  "id": "address.v0.devnet-001",
+  "kind": "address_encoding_decoding",
+  "status": "independently_verified",
+  "description": "Canonical devnet Bech32m encoding and strict round-trip decoding of a 33-byte recipient v0 value.",
+  "spec_refs": ["docs/wire-format-v0.md#2-binary-recipients-and-bech32m-addresses"],
+  "parameters": {"address_hrp": "dout", "network": "devnet", "recipient_payload_len": 32},
+  "inputs": {
+    "address_version": 0,
+    "payload_hex": "03a107bff3ce10be1d70dd18e74bc09967e4d6309ba50d5f1ddc8664125531b8",
+    "checksum_variant": "bech32m",
+    "canonical_case": "lowercase"
+  },
+  "expected": {
+    "recipient_hex": {"encoding": "hex", "value": "0003a107bff3ce10be1d70dd18e74bc09967e4d6309ba50d5f1ddc8664125531b8", "verification": "independently_verified"},
+    "address_text": {"encoding": "bech32m", "value": "dout1qqp6zpal708pp0sawrw33e6tczvk0exkxzd62r2lrhwgveqj25cms6x9386", "verification": "independently_verified"},
+    "round_trip_equal": {"encoding": "boolean", "value": true, "verification": "independently_verified"}
+  },
+  "verification": {
+    "method": "Dependency-free Python and independent C implementations encoded and decoded the same recipient, enforcing lowercase, HRP, checksum, padding, and length.",
+    "implementations": [
+      {"name": "out_ref.py", "language": "Python", "version": "sha256:b9874f21ebf3ef727e7733c1dff5d33f5da2239e73fafdf86eb6f85b631cdf73", "result_digest": "21528d5476ab75154427117b34d65d82ce73bb1e981489619e039cdf02c78ae6"},
+      {"name": "out_vectors.c", "language": "C", "version": "sha256:484129ff7cac67ffbfe5e9b738852b4e12dfef59abd36a0059241c7cd16c3f52", "result_digest": "21528d5476ab75154427117b34d65d82ce73bb1e981489619e039cdf02c78ae6"}
+    ]
+  }
+}

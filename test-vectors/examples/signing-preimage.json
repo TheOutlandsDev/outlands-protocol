@@ -1,0 +1,24 @@
+{
+  "format_version": 0,
+  "id": "tx.signing-preimage.devnet-001",
+  "kind": "transaction_signing_preimage",
+  "status": "independently_verified",
+  "description": "Exact version-0 regular-transaction signing material and BLAKE3 derive-key digest.",
+  "spec_refs": ["docs/consensus-v0.md#3-blake3-domain-separation", "docs/wire-format-v0.md#35-signing-and-transaction-identity"],
+  "inputs": {
+    "context_ascii": "OUT Consensus v0 2026-08-30 transaction signing digest",
+    "material_formula": "00 || 00 || 00 || BE32(body_len) || canonical_regular_body",
+    "canonical_regular_body_hex": "0000fb2651b3fba992e8836d846280745eb7a21d4962d4306858bbfb42690bde49c400000003baa26e3bdda0a7b3196e89367f32a9d05558ea5ea196875f30880f055e5226a70003a107bff3ce10be1d70dd18e74bc09967e4d6309ba50d5f1ddc8664125531b800000000000000000029acbae141bccaf0b22e1a94d34d0bc7361e526d0bfe12c89794bc9322966dd700000000075bcd1500000000000003e8000000000000000100000000000003e8000a4f555420766563746f72"
+  },
+  "expected": {
+    "signing_material_hex": {"encoding": "hex", "value": "000000000000bc0000fb2651b3fba992e8836d846280745eb7a21d4962d4306858bbfb42690bde49c400000003baa26e3bdda0a7b3196e89367f32a9d05558ea5ea196875f30880f055e5226a70003a107bff3ce10be1d70dd18e74bc09967e4d6309ba50d5f1ddc8664125531b800000000000000000029acbae141bccaf0b22e1a94d34d0bc7361e526d0bfe12c89794bc9322966dd700000000075bcd1500000000000003e8000000000000000100000000000003e8000a4f555420766563746f72", "verification": "independently_verified"},
+    "signing_digest_hex": {"encoding": "hex", "value": "cd232a5f2e62648203b9c1acba9865e6459f210c8bf7a3c90805f698ac6d2c7e", "verification": "independently_verified"}
+  },
+  "verification": {
+    "method": "Python dependency-free BLAKE3 and official portable C BLAKE3 produced identical material and derive-key digest; both passed official BLAKE3 vectors.",
+    "implementations": [
+      {"name": "out_ref.py", "language": "Python", "version": "sha256:b9874f21ebf3ef727e7733c1dff5d33f5da2239e73fafdf86eb6f85b631cdf73", "result_digest": "21528d5476ab75154427117b34d65d82ce73bb1e981489619e039cdf02c78ae6"},
+      {"name": "out_vectors.c plus official BLAKE3 C", "language": "C", "version": "sha256:484129ff7cac67ffbfe5e9b738852b4e12dfef59abd36a0059241c7cd16c3f52; blake3-1.8.7-f3149ec", "result_digest": "21528d5476ab75154427117b34d65d82ce73bb1e981489619e039cdf02c78ae6"}
+    ]
+  }
+}

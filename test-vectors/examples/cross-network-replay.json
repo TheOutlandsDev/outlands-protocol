@@ -1,0 +1,28 @@
+{
+  "format_version": 0,
+  "id": "replay.devnet-to-testnet.invalid-001",
+  "kind": "cross_network_replay_rejection",
+  "status": "independently_verified",
+  "description": "A valid devnet transaction fails testnet identity checks unchanged; rewriting its identity also invalidates its Ed25519 signature.",
+  "spec_refs": ["docs/consensus-v0.md#2-network-identity-and-replay-boundary", "docs/wire-format-v0.md#35-signing-and-transaction-identity"],
+  "inputs": {
+    "signed_transaction_hex": "0000000000bc0000fb2651b3fba992e8836d846280745eb7a21d4962d4306858bbfb42690bde49c400000003baa26e3bdda0a7b3196e89367f32a9d05558ea5ea196875f30880f055e5226a70003a107bff3ce10be1d70dd18e74bc09967e4d6309ba50d5f1ddc8664125531b800000000000000000029acbae141bccaf0b22e1a94d34d0bc7361e526d0bfe12c89794bc9322966dd700000000075bcd1500000000000003e8000000000000000100000000000003e8000a4f555420766563746f720062000003a107bff3ce10be1d70dd18e74bc09967e4d6309ba50d5f1ddc8664125531b84db0b309e83e23461a59160d12f3a37386b6a4487fc1c0e0686ed031ba34a001bf24e6a71333e0a4f4df223d388623b0ec8b07ebc79ad9d67aecb4c52981ec0b",
+    "network_a": {"label": "devnet", "chain_id_hex": "fb2651b3fba992e8836d846280745eb7a21d4962d4306858bbfb42690bde49c4", "network_id": 3, "genesis_commitment_hex": "baa26e3bdda0a7b3196e89367f32a9d05558ea5ea196875f30880f055e5226a7"},
+    "network_b": {"label": "testnet", "chain_id_hex": "fb2651b3fba992e8836d846280745eb7a21d4962d4306858bbfb42690bde49c4", "network_id": 2, "genesis_commitment_hex": "2a0cd6921865d4514f264cd96ed3f8fb05dba505747f7412e403560a72a7ebe6"},
+    "rewrite": "replace network_id and genesis_commitment in the body without resigning"
+  },
+  "expected": {
+    "accepted_on_network_a": {"encoding": "boolean", "value": true, "verification": "independently_verified"},
+    "accepted_unchanged_on_network_b": {"encoding": "boolean", "value": false, "verification": "independently_verified"},
+    "unchanged_network_b_error": {"encoding": "error_code", "value": "NETWORK_ID_MISMATCH", "verification": "independently_verified"},
+    "rewritten_signing_digest_hex": {"encoding": "hex", "value": "d20c66a062b2c7054c29876ef0474334aa9f8c7f3cee3ea5c0568a6276529b09", "verification": "independently_verified"},
+    "original_signature_valid_after_rewrite": {"encoding": "boolean", "value": false, "verification": "independently_verified"}
+  },
+  "verification": {
+    "method": "Both implementations parsed the signed body identity, accepted it for devnet, rejected it unchanged for testnet, recomputed the testnet signing digest, and rejected the original signature over that digest.",
+    "implementations": [
+      {"name": "out_ref.py", "language": "Python", "version": "sha256:b9874f21ebf3ef727e7733c1dff5d33f5da2239e73fafdf86eb6f85b631cdf73", "result_digest": "21528d5476ab75154427117b34d65d82ce73bb1e981489619e039cdf02c78ae6"},
+      {"name": "out_vectors.c plus OpenSSL EVP", "language": "C", "version": "sha256:484129ff7cac67ffbfe5e9b738852b4e12dfef59abd36a0059241c7cd16c3f52; OpenSSL-3.0.2", "result_digest": "21528d5476ab75154427117b34d65d82ce73bb1e981489619e039cdf02c78ae6"}
+    ]
+  }
+}

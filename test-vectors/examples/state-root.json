@@ -1,0 +1,29 @@
+{
+  "format_version": 0,
+  "id": "state.root.two-accounts.devnet-001",
+  "kind": "state_root",
+  "status": "independently_verified",
+  "description": "Fixed-depth 256-level sparse-tree root for the two post-transition accounts.",
+  "spec_refs": ["docs/state-model-v0.md#6-sparse-authenticated-state-tree"],
+  "inputs": {
+    "tree_version": 0,
+    "accounts": [
+      {"recipient_hex": "0003a107bff3ce10be1d70dd18e74bc09967e4d6309ba50d5f1ddc8664125531b8", "balance": 1376543211, "nonce": 1},
+      {"recipient_hex": "0029acbae141bccaf0b22e1a94d34d0bc7361e526d0bfe12c89794bc9322966dd7", "balance": 123456789, "nonce": 0}
+    ],
+    "key_bit_order": "MSB-first",
+    "depth": 256
+  },
+  "expected": {
+    "account_keys_hex": {"encoding": "object", "value": ["6619ac8e10fadf1fd35737c0f437d0c75d76bb19c33e4b0ca3953e30c85fa4f8", "516c6fc142ec3bda9eb3744f9c3d7608e81e1cf0c4d567ac5f30e9d499eab948"], "verification": "independently_verified"},
+    "empty_root_hex": {"encoding": "hex", "value": "3d30a2588a2f688edd9b29af2bb3b522db2deb731709dbfb53fadefab69c2147", "verification": "independently_verified"},
+    "state_root_hex": {"encoding": "hex", "value": "25484208231a78f132d97102067e49ddd3bf1fe904212116af2af81fa47923aa", "verification": "independently_verified"}
+  },
+  "verification": {
+    "method": "Independent dictionary-indexed Python and recursive partitioning C sparse-tree implementations derived identical account keys, empty root, and state root without database iteration.",
+    "implementations": [
+      {"name": "out_ref.py", "language": "Python", "version": "sha256:b9874f21ebf3ef727e7733c1dff5d33f5da2239e73fafdf86eb6f85b631cdf73", "result_digest": "21528d5476ab75154427117b34d65d82ce73bb1e981489619e039cdf02c78ae6"},
+      {"name": "out_vectors.c", "language": "C", "version": "sha256:484129ff7cac67ffbfe5e9b738852b4e12dfef59abd36a0059241c7cd16c3f52", "result_digest": "21528d5476ab75154427117b34d65d82ce73bb1e981489619e039cdf02c78ae6"}
+    ]
+  }
+}
