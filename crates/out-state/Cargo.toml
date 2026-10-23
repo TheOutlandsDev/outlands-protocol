@@ -1,0 +1,13 @@
+[package]
+name = "out-state"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[dependencies]
+out-crypto = { path = "../out-crypto" }
+out-primitives = { path = "../out-primitives" }
+
+[lints]
+workspace = true
