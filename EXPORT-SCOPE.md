@@ -1,0 +1,9 @@
+# Export scope
+
+This snapshot is a bounded selection of the original OUT Rust implementation: eight crates, the language-neutral consensus documents, illustrative synthetic vectors, and testnet/devnet genesis fixtures. It does not include the wallet crate, keystore design/review material, private evidence, runtime state, host scripts, the standalone Python/C reference tools or vendored C code. No new demonstration or frontend replaces the original implementation.
+
+Rust source and crate manifests are unchanged. The root workspace omits the wallet member; Cargo.lock was regenerated offline and only unused original packages were removed. No dependency version/checksum was added or upgraded. Existing package license declarations are preserved, with no new license selection.
+
+The normative documents and retained crate/fixture READMEs include dated development history. Their historical verification/ratification language describes the original records. The fresh executable result for this export is the six-crate, 106-test run in [VALIDATION.md](VALIDATION.md). Historical C/Python, native database, local-process, wallet and independent-review claims were not repeated. References to excluded tools are historical source references, not reproducible commands in this snapshot.
+
+No production credentials, wallet keys, real account/balance data, personal contact details, private URLs, host addresses, absolute workstation paths, databases, logs, caches, binaries, backups, source maps or private Git history are exported. Development fixture keys and encoded recipients are deterministic synthetic examples, not live identities. No anonymity or universal secret-absence guarantee is made. Publication of source grants no assurance about consensus, security, economics or suitability for funds.

@@ -1,0 +1,680 @@
+{
+  "scope": "Original-source selection; no private location, identity or history included",
+  "files": [
+    {
+      "path": ".gitignore",
+      "original_bytes": 9,
+      "original_sha256": "306fd52e74fca6746e12acc750f232de15e71da917756a1270d74c91f5eb7368",
+      "export_bytes": 9,
+      "export_sha256": "306fd52e74fca6746e12acc750f232de15e71da917756a1270d74c91f5eb7368",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "Cargo.lock",
+      "original_bytes": 19187,
+      "original_sha256": "acf2545014598150fc643c6ed2566a00a174d5ad7a1cae388fe19244de33abc1",
+      "export_bytes": 14916,
+      "export_sha256": "51e4d4b44701cbbc9c2c9157677087aad8b8c8d2182120662f87a6334c6cce2e",
+      "transformation": "Offline removal of excluded wallet and unused dependency packages; no added version/checksum",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "Cargo.toml",
+      "original_bytes": 1433,
+      "original_sha256": "0f3b46c35ac489be77825a24a50cd15722e864490ada3c826a4851cbe23b9cb7",
+      "export_bytes": 1408,
+      "export_sha256": "daad1a896415d88545875cd30cdc33fe221d02838632b693a7adc4c46936aa7f",
+      "transformation": "Remove excluded wallet workspace member; existing dependency and license declarations retained",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "crates/out-codec/Cargo.toml",
+      "original_bytes": 219,
+      "original_sha256": "f5ae1a442e407dc03a17a04e1f14e14e624723a91c150a23bef5eb307c33644a",
+      "export_bytes": 219,
+      "export_sha256": "f5ae1a442e407dc03a17a04e1f14e14e624723a91c150a23bef5eb307c33644a",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "crates/out-codec/src/lib.rs",
+      "original_bytes": 41882,
+      "original_sha256": "27babdd25f1dff8d270d4d7ab3e3b8afa446e9e15d77f4664b5ac85877f7b67c",
+      "export_bytes": 41882,
+      "export_sha256": "27babdd25f1dff8d270d4d7ab3e3b8afa446e9e15d77f4664b5ac85877f7b67c",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "crates/out-consensus/Cargo.toml",
+      "original_bytes": 339,
+      "original_sha256": "1fba72deb8f6fd86e2b0c262840923bcd48894477be1d6aa04c2a48017afcffe",
+      "export_bytes": 339,
+      "export_sha256": "1fba72deb8f6fd86e2b0c262840923bcd48894477be1d6aa04c2a48017afcffe",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "crates/out-consensus/src/block.rs",
+      "original_bytes": 34446,
+      "original_sha256": "9de3b7f23aef21f2d7777953fe591580c2db7624a4ac4b422d7a3b5702e5ea91",
+      "export_bytes": 34446,
+      "export_sha256": "9de3b7f23aef21f2d7777953fe591580c2db7624a4ac4b422d7a3b5702e5ea91",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "crates/out-consensus/src/chain.rs",
+      "original_bytes": 37845,
+      "original_sha256": "1d7f40b8209ba61ea470eb9f6908ab9801ad3637845703ee5d906beb2cb1665c",
+      "export_bytes": 37845,
+      "export_sha256": "1d7f40b8209ba61ea470eb9f6908ab9801ad3637845703ee5d906beb2cb1665c",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "crates/out-consensus/src/lib.rs",
+      "original_bytes": 59052,
+      "original_sha256": "0b4a9717866f8225ca35f8b83ff042e134786ba488a27edf42205746a1877215",
+      "export_bytes": 59052,
+      "export_sha256": "0b4a9717866f8225ca35f8b83ff042e134786ba488a27edf42205746a1877215",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "crates/out-crypto/Cargo.toml",
+      "original_bytes": 309,
+      "original_sha256": "f3c3d1cd59668674b9a2bd682035de7dd74cb760fff60cd8a3776f67a2d9d0e4",
+      "export_bytes": 309,
+      "export_sha256": "f3c3d1cd59668674b9a2bd682035de7dd74cb760fff60cd8a3776f67a2d9d0e4",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "crates/out-crypto/src/lib.rs",
+      "original_bytes": 11544,
+      "original_sha256": "5161eee8d510ae14722c4bb10d52e7d8a89e0579a1414569881c22fa64922ae9",
+      "export_bytes": 11544,
+      "export_sha256": "5161eee8d510ae14722c4bb10d52e7d8a89e0579a1414569881c22fa64922ae9",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "crates/out-node/Cargo.toml",
+      "original_bytes": 530,
+      "original_sha256": "1af992634faa3f4dda7f093ea3ef2b2f0f1cbebf1de2834f881ffa252a3e325c",
+      "export_bytes": 530,
+      "export_sha256": "1af992634faa3f4dda7f093ea3ef2b2f0f1cbebf1de2834f881ffa252a3e325c",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "crates/out-node/OPERATOR-PROTOCOL.md",
+      "original_bytes": 8449,
+      "original_sha256": "125d1f99a614c6ef9bb0bfa8c949729c8b4d57659ecad69e6dd5fe3cfaaf0cdb",
+      "export_bytes": 8629,
+      "export_sha256": "1a147f6c7d70e207f72d7dd26590cb97638d2d2b5f3d05b16488250fbe81ecf2",
+      "transformation": "Copy-only historical-status/export-scope banner added",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "crates/out-node/README.md",
+      "original_bytes": 34208,
+      "original_sha256": "82cc0c385a7b93faf7cedbca90d0fbc63af002b035e6edab7d68f4f78b68837c",
+      "export_bytes": 34388,
+      "export_sha256": "c19b0da443a23d4589b38613f0a42583dddf09074c3ac8cfe30d1189082b568f",
+      "transformation": "Copy-only historical-status/export-scope banner added",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "crates/out-node/src/bin/out-node-local.rs",
+      "original_bytes": 1247,
+      "original_sha256": "aef30cb53430bac4f989a27ccc7feca2069c52e5136bfb37900c36ac064847b4",
+      "export_bytes": 1247,
+      "export_sha256": "aef30cb53430bac4f989a27ccc7feca2069c52e5136bfb37900c36ac064847b4",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "crates/out-node/src/bin/out-operator.rs",
+      "original_bytes": 1877,
+      "original_sha256": "4b8db565915b30945789aa0b092a08d1f89672b50de226b4243a0286aa5ce8c6",
+      "export_bytes": 1877,
+      "export_sha256": "4b8db565915b30945789aa0b092a08d1f89672b50de226b4243a0286aa5ce8c6",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "crates/out-node/src/bootstrap.rs",
+      "original_bytes": 14711,
+      "original_sha256": "8e516f44ba769fe8b26ea45d0c369a8806727ffee4825f0e89232ee9fbdf74eb",
+      "export_bytes": 14711,
+      "export_sha256": "8e516f44ba769fe8b26ea45d0c369a8806727ffee4825f0e89232ee9fbdf74eb",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "crates/out-node/src/cli.rs",
+      "original_bytes": 15077,
+      "original_sha256": "e53e24e4da12f1f2fc24e8909c57dd368ac7943d833485e1f525255bfc7b1763",
+      "export_bytes": 15077,
+      "export_sha256": "e53e24e4da12f1f2fc24e8909c57dd368ac7943d833485e1f525255bfc7b1763",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "crates/out-node/src/dispatcher.rs",
+      "original_bytes": 118160,
+      "original_sha256": "9e05da8b5432cd1ba2dc5f47419e3a442a75e574d6c75e4c22df1005c07e3a24",
+      "export_bytes": 118160,
+      "export_sha256": "9e05da8b5432cd1ba2dc5f47419e3a442a75e574d6c75e4c22df1005c07e3a24",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "crates/out-node/src/driver.rs",
+      "original_bytes": 45371,
+      "original_sha256": "39abb570732a43f18b52b305c34dcd8abc4f67946ff0845a51fce49f63d247e9",
+      "export_bytes": 45371,
+      "export_sha256": "39abb570732a43f18b52b305c34dcd8abc4f67946ff0845a51fce49f63d247e9",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "crates/out-node/src/duplex_harness.rs",
+      "original_bytes": 47229,
+      "original_sha256": "d161844afb481eb60efb75e59e7d370939cc0cd11ab17109a619742857857bad",
+      "export_bytes": 47229,
+      "export_sha256": "d161844afb481eb60efb75e59e7d370939cc0cd11ab17109a619742857857bad",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "crates/out-node/src/harness.rs",
+      "original_bytes": 39731,
+      "original_sha256": "5de4a218ee46137e42791f94fa111731cc84a7b074c4e57e44b41a8fe75cd165",
+      "export_bytes": 39731,
+      "export_sha256": "5de4a218ee46137e42791f94fa111731cc84a7b074c4e57e44b41a8fe75cd165",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "crates/out-node/src/lib.rs",
+      "original_bytes": 16829,
+      "original_sha256": "4a4e47fba332bd54cb0ed8354f3540584fec56bb749c8d25df0764080c17a0ec",
+      "export_bytes": 16829,
+      "export_sha256": "4a4e47fba332bd54cb0ed8354f3540584fec56bb749c8d25df0764080c17a0ec",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "crates/out-node/src/mempool.rs",
+      "original_bytes": 24896,
+      "original_sha256": "b6d11cecad8bed2d474dd253183d909ab354cd959ee6690bc35437eeac813ec3",
+      "export_bytes": 24896,
+      "export_sha256": "b6d11cecad8bed2d474dd253183d909ab354cd959ee6690bc35437eeac813ec3",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "crates/out-node/src/mining.rs",
+      "original_bytes": 36701,
+      "original_sha256": "0208f59f2d95df227aa6be7c3efdc2cf1e1664a57481805b712cd9b5866db648",
+      "export_bytes": 36701,
+      "export_sha256": "0208f59f2d95df227aa6be7c3efdc2cf1e1664a57481805b712cd9b5866db648",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "crates/out-node/src/multi_harness.rs",
+      "original_bytes": 45133,
+      "original_sha256": "b84318b72f97ba06810195a5a545b8f1ab301bd8381fe917be22b94f5653a6d9",
+      "export_bytes": 45133,
+      "export_sha256": "b84318b72f97ba06810195a5a545b8f1ab301bd8381fe917be22b94f5653a6d9",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "crates/out-node/src/operator.rs",
+      "original_bytes": 60161,
+      "original_sha256": "92b2d73c778c837818e047ef929b5229b2d547bd04b23147caf269f7a4f14b93",
+      "export_bytes": 60161,
+      "export_sha256": "92b2d73c778c837818e047ef929b5229b2d547bd04b23147caf269f7a4f14b93",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "crates/out-node/src/peers.rs",
+      "original_bytes": 51953,
+      "original_sha256": "51413b64655ec9cc993fa68af1407bb200cc320283b189a4c57ffc2c92805c16",
+      "export_bytes": 51953,
+      "export_sha256": "51413b64655ec9cc993fa68af1407bb200cc320283b189a4c57ffc2c92805c16",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "crates/out-node/src/process.rs",
+      "original_bytes": 11629,
+      "original_sha256": "394755597167b4a429ee3f05e8b6dbf4381d3984193d6e391c5cc686a5db8db3",
+      "export_bytes": 11629,
+      "export_sha256": "394755597167b4a429ee3f05e8b6dbf4381d3984193d6e391c5cc686a5db8db3",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "crates/out-node/src/runtime.rs",
+      "original_bytes": 31548,
+      "original_sha256": "5a42ffbc7a8fb1fb4a9038f01d4fdcd72468732e1d4db6b70ead70292c1e511f",
+      "export_bytes": 31548,
+      "export_sha256": "5a42ffbc7a8fb1fb4a9038f01d4fdcd72468732e1d4db6b70ead70292c1e511f",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "crates/out-node/src/serving.rs",
+      "original_bytes": 24919,
+      "original_sha256": "da40906f7472915223bfea454c54c2317ee5b97a424a9573e42e80516a36f00b",
+      "export_bytes": 24919,
+      "export_sha256": "da40906f7472915223bfea454c54c2317ee5b97a424a9573e42e80516a36f00b",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "crates/out-node/src/sync.rs",
+      "original_bytes": 61300,
+      "original_sha256": "61da4ca7951b3e00b8eeeb15a35fe9f28ad96bd6d550a96e0ff64c7918c85865",
+      "export_bytes": 61300,
+      "export_sha256": "61da4ca7951b3e00b8eeeb15a35fe9f28ad96bd6d550a96e0ff64c7918c85865",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "crates/out-node/tests/local_process.rs",
+      "original_bytes": 5283,
+      "original_sha256": "f8b2e812d01466acc50a09bd90fe848c0d2ae257787e33492209023640385f8f",
+      "export_bytes": 5283,
+      "export_sha256": "f8b2e812d01466acc50a09bd90fe848c0d2ae257787e33492209023640385f8f",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "crates/out-p2p/Cargo.toml",
+      "original_bytes": 295,
+      "original_sha256": "cb2a2badeb7c9c6cc4c6d6fe9d52f16436c1e77719c54d247110615e19745790",
+      "export_bytes": 295,
+      "export_sha256": "cb2a2badeb7c9c6cc4c6d6fe9d52f16436c1e77719c54d247110615e19745790",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "crates/out-p2p/README.md",
+      "original_bytes": 2357,
+      "original_sha256": "72dae63bf90b29bd2a17640de9d733250de8ee7031b39f8ab3dfda777ac41874",
+      "export_bytes": 2537,
+      "export_sha256": "2f160a175e7115410b6cb8870a123f3ce0950a2cb4feb619a3315569fce0e7a4",
+      "transformation": "Copy-only historical-status/export-scope banner added",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "crates/out-p2p/src/lib.rs",
+      "original_bytes": 38723,
+      "original_sha256": "835c06a6a3e39e5f52a202656dd27f5108ea23f66fe1f3e391eefe59b037eadb",
+      "export_bytes": 38723,
+      "export_sha256": "835c06a6a3e39e5f52a202656dd27f5108ea23f66fe1f3e391eefe59b037eadb",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "crates/out-p2p/src/session.rs",
+      "original_bytes": 49745,
+      "original_sha256": "3575cb59d18f4af2e6ff8fd9a10520a136ab8fc63cd636baba144ed8d0451690",
+      "export_bytes": 49745,
+      "export_sha256": "3575cb59d18f4af2e6ff8fd9a10520a136ab8fc63cd636baba144ed8d0451690",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "crates/out-primitives/Cargo.toml",
+      "original_bytes": 207,
+      "original_sha256": "14ad7884d55e59d0500ff67199fc39de1576be5727095c5177e894ec45d0bbdd",
+      "export_bytes": 207,
+      "export_sha256": "14ad7884d55e59d0500ff67199fc39de1576be5727095c5177e894ec45d0bbdd",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "crates/out-primitives/src/lib.rs",
+      "original_bytes": 9213,
+      "original_sha256": "f43bba87558ac785431537a3f2f3c411ae8694a2f2d3e6c92893cf64e4562b18",
+      "export_bytes": 9213,
+      "export_sha256": "f43bba87558ac785431537a3f2f3c411ae8694a2f2d3e6c92893cf64e4562b18",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "crates/out-state/Cargo.toml",
+      "original_bytes": 259,
+      "original_sha256": "eb729db8dcf45aab7bc86d35bb6488369d40c028d2536bd2aaad5caee9d4e79b",
+      "export_bytes": 259,
+      "export_sha256": "eb729db8dcf45aab7bc86d35bb6488369d40c028d2536bd2aaad5caee9d4e79b",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "crates/out-state/src/lib.rs",
+      "original_bytes": 15658,
+      "original_sha256": "9302d9bed890874b51e91778a96c18d7b5fdec506fe029fb7f67d8d8cd33cdce",
+      "export_bytes": 15658,
+      "export_sha256": "9302d9bed890874b51e91778a96c18d7b5fdec506fe029fb7f67d8d8cd33cdce",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "crates/out-storage/Cargo.toml",
+      "original_bytes": 511,
+      "original_sha256": "231728b975fbef4ab0fdb5d4fb245a0d967b8c80f9e3fe4a1371ab6ea4298cb4",
+      "export_bytes": 511,
+      "export_sha256": "231728b975fbef4ab0fdb5d4fb245a0d967b8c80f9e3fe4a1371ab6ea4298cb4",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "crates/out-storage/README.md",
+      "original_bytes": 11005,
+      "original_sha256": "f8d75abb6f2c266fd42267ecafe63dc3bd99c5744863e7645b15b7e73bbde3d7",
+      "export_bytes": 11185,
+      "export_sha256": "0f1cd8f41e529aa65b10e9bd674dfe0c5dda330d441c9a6e707be15d2844ac54",
+      "transformation": "Copy-only historical-status/export-scope banner added",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "crates/out-storage/src/conformance.rs",
+      "original_bytes": 15782,
+      "original_sha256": "a5d8cfc57865bcf113593d1d97056cf6490a91f3a7b6f245f121a600a0e510ec",
+      "export_bytes": 15782,
+      "export_sha256": "a5d8cfc57865bcf113593d1d97056cf6490a91f3a7b6f245f121a600a0e510ec",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "crates/out-storage/src/lib.rs",
+      "original_bytes": 46246,
+      "original_sha256": "f2500962bfd7d262258bae1b8b2a9385bf2e7f9743eb6c65f822c8484213b5a1",
+      "export_bytes": 46246,
+      "export_sha256": "f2500962bfd7d262258bae1b8b2a9385bf2e7f9743eb6c65f822c8484213b5a1",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "crates/out-storage/src/records.rs",
+      "original_bytes": 44708,
+      "original_sha256": "8b7c42a3a897b4d2b3620ac0e6e1f6a9e17fec9bc831132108900da483b6ebc5",
+      "export_bytes": 44708,
+      "export_sha256": "8b7c42a3a897b4d2b3620ac0e6e1f6a9e17fec9bc831132108900da483b6ebc5",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "crates/out-storage/src/redb_backend.rs",
+      "original_bytes": 51038,
+      "original_sha256": "c44bdc8ef05fbee0bc65751df02568a7ab5555442c93eb8c4b145181bd24f281",
+      "export_bytes": 51038,
+      "export_sha256": "c44bdc8ef05fbee0bc65751df02568a7ab5555442c93eb8c4b145181bd24f281",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "crates/out-storage/src/rocksdb_backend.rs",
+      "original_bytes": 29225,
+      "original_sha256": "c2b353a11f4e952cbc76e5441d9685c01258454927fbe89c3ac78e3826a93309",
+      "export_bytes": 29225,
+      "export_sha256": "c2b353a11f4e952cbc76e5441d9685c01258454927fbe89c3ac78e3826a93309",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "docs/consensus-v0.md",
+      "original_bytes": 20633,
+      "original_sha256": "ba652e5f814a9cfc24da704562cfe49e46019a96ff63e2cb39b00c6f179c45f0",
+      "export_bytes": 20810,
+      "export_sha256": "51eadf422df005dda1cbe6fe32ef061015d3843ac6878f95120f3f2340d72926",
+      "transformation": "Copy-only historical-status/export-scope banner added",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "docs/implementation-review-checklist.md",
+      "original_bytes": 8180,
+      "original_sha256": "c50846eb3628a4160d84c2a7793541f61fe1f9557fc834e25e73b9a44e5dbd92",
+      "export_bytes": 8357,
+      "export_sha256": "2a107db3970154a357008c154bbf9dc330573ee6edd487ac26c8c331ba46bb48",
+      "transformation": "Copy-only historical-status/export-scope banner added",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "docs/open-decisions.md",
+      "original_bytes": 14658,
+      "original_sha256": "c56de537505122b624ecc6f882bf9add1eb210b6c246674359c964f0b7a0a69c",
+      "export_bytes": 14835,
+      "export_sha256": "03d5cd545225d550e2c768a3019247a42e73a48a09a7335b6e17741a29827bbe",
+      "transformation": "Copy-only historical-status/export-scope banner added",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "docs/pow-v0.md",
+      "original_bytes": 12230,
+      "original_sha256": "cc40328d39d5afe98342ef446095e846b3748596f65df1442731ec37bb8f4d22",
+      "export_bytes": 12407,
+      "export_sha256": "925308f7dc107fb275769e77b380186e4c85980fb9de06f354673d42649610e0",
+      "transformation": "Copy-only historical-status/export-scope banner added",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "docs/security-invariants.md",
+      "original_bytes": 9400,
+      "original_sha256": "ca701e3f06f1e19c54a69fb546a3bcbddd2ba3bbe1beb0458febbac632c83e0d",
+      "export_bytes": 9577,
+      "export_sha256": "339a03c9fe00925c89966ed9ccf207aa8ff2575696be5073bc1b5c109c095633",
+      "transformation": "Copy-only historical-status/export-scope banner added",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "docs/state-model-v0.md",
+      "original_bytes": 15123,
+      "original_sha256": "649bd101758b5db685232a40aecdfedaeb7ca91d07301602c816e56519aea79a",
+      "export_bytes": 15300,
+      "export_sha256": "d4a0a63c1d09de3389be3d8a92222ac1275a8f056c44c35a72aaaf668176b22b",
+      "transformation": "Copy-only historical-status/export-scope banner added",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "docs/wire-format-v0.md",
+      "original_bytes": 19775,
+      "original_sha256": "503d1c3f2197610623d31cf14cb9768ea651e0bb206ec9cef34c6027b39b22d0",
+      "export_bytes": 19952,
+      "export_sha256": "a769ba52969ed4d49acd6ed3f3a4957bae425e22e2655753e482455e594a6611",
+      "transformation": "Copy-only historical-status/export-scope banner added",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "genesis/README.md",
+      "original_bytes": 993,
+      "original_sha256": "70478e3508607c53f56efff9d4457cd83a1c8da88f67e1c20b4a66948d8aa3ea",
+      "export_bytes": 1170,
+      "export_sha256": "6bc42c2218691e824200aabfcaffcdb995bc847db2fcba1be31f2bbe00521fb5",
+      "transformation": "Copy-only historical-status/export-scope banner added",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "genesis/generated/README.md",
+      "original_bytes": 1690,
+      "original_sha256": "c1cee88b834f60ac95098c391a7344047f2c71971fab1a6beab74d98a28be292",
+      "export_bytes": 1870,
+      "export_sha256": "452b9dcc8bec1162bc9209107a134d488a434024eef9aed9282e35cfa719c08d",
+      "transformation": "Copy-only historical-status/export-scope banner added",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "genesis/generated/devnet-v0.json",
+      "original_bytes": 2617,
+      "original_sha256": "8e775d6eb4494342401cfbfd934bed5ee5e5eabc6ef25f04000bc0d882f342ff",
+      "export_bytes": 2617,
+      "export_sha256": "8e775d6eb4494342401cfbfd934bed5ee5e5eabc6ef25f04000bc0d882f342ff",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "genesis/generated/testnet-v0.json",
+      "original_bytes": 2620,
+      "original_sha256": "9ed4c39465b4c0f833010475f3a862bed2d141342d1f6e5ace521ccc317e4b22",
+      "export_bytes": 2620,
+      "export_sha256": "9ed4c39465b4c0f833010475f3a862bed2d141342d1f6e5ace521ccc317e4b22",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "genesis/parameter-source-v0.json",
+      "original_bytes": 4881,
+      "original_sha256": "709dd4eb45641397dae09d137b3d0ac657d55bea11e5292e3d8826c28df24a74",
+      "export_bytes": 4881,
+      "export_sha256": "709dd4eb45641397dae09d137b3d0ac657d55bea11e5292e3d8826c28df24a74",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "rust-toolchain.toml",
+      "original_bytes": 86,
+      "original_sha256": "495c69d1db93f25f53e3d0d2d40d812313366cc368de317871c2ace6c6ffafa4",
+      "export_bytes": 86,
+      "export_sha256": "495c69d1db93f25f53e3d0d2d40d812313366cc368de317871c2ace6c6ffafa4",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "test-vectors/README.md",
+      "original_bytes": 3812,
+      "original_sha256": "0933ef76da9d6ea4ef761609f3dd68369bfb624d044909e3b0c459c2765a38e1",
+      "export_bytes": 3989,
+      "export_sha256": "2664f01d3bfd0b43c5051d13f1610305c57b28f40a32a932d5d27eb66cdfa984",
+      "transformation": "Copy-only historical-status/export-scope banner added",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "test-vectors/examples/address.json",
+      "original_bytes": 1754,
+      "original_sha256": "770aacf274096202a16a054c86f334bbedf462d07314bb6961f05e5b9784c6ca",
+      "export_bytes": 1754,
+      "export_sha256": "770aacf274096202a16a054c86f334bbedf462d07314bb6961f05e5b9784c6ca",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "test-vectors/examples/block-header.json",
+      "original_bytes": 2369,
+      "original_sha256": "4d1e0dd091c3dcb9617bbc9e74fb317f78d68a575e6d11104894bda034643a69",
+      "export_bytes": 2369,
+      "export_sha256": "4d1e0dd091c3dcb9617bbc9e74fb317f78d68a575e6d11104894bda034643a69",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "test-vectors/examples/canonical-transaction.json",
+      "original_bytes": 3469,
+      "original_sha256": "50e6918b9cc1dfe76bd8678c3a842a1c4f791e616cace42e0963882001fa896f",
+      "export_bytes": 3469,
+      "export_sha256": "50e6918b9cc1dfe76bd8678c3a842a1c4f791e616cace42e0963882001fa896f",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "test-vectors/examples/cross-network-replay.json",
+      "original_bytes": 3093,
+      "original_sha256": "404acdb680dacde6d8bba50c54623d7f62952556674f99a0be64aa78e6b50d01",
+      "export_bytes": 3093,
+      "export_sha256": "404acdb680dacde6d8bba50c54623d7f62952556674f99a0be64aa78e6b50d01",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "test-vectors/examples/invalid-encoding.json",
+      "original_bytes": 2637,
+      "original_sha256": "f0d9db246581c6eab340327858f779c8fcd51e5e7682225dbc327dda858e8633",
+      "export_bytes": 2637,
+      "export_sha256": "f0d9db246581c6eab340327858f779c8fcd51e5e7682225dbc327dda858e8633",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "test-vectors/examples/merkle-root.json",
+      "original_bytes": 1990,
+      "original_sha256": "683746e4e5699fb62cc381ee96d44d943979d8a0ab4a988885ec3a6a2540f08e",
+      "export_bytes": 1990,
+      "export_sha256": "683746e4e5699fb62cc381ee96d44d943979d8a0ab4a988885ec3a6a2540f08e",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "test-vectors/examples/overflow-nonce-failures.json",
+      "original_bytes": 1644,
+      "original_sha256": "94b7588ab2e16203983631e04e390dccb6576db30b64e3189f1502a00fe8e0e4",
+      "export_bytes": 1644,
+      "export_sha256": "94b7588ab2e16203983631e04e390dccb6576db30b64e3189f1502a00fe8e0e4",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "test-vectors/examples/pow.json",
+      "original_bytes": 2719,
+      "original_sha256": "02a41cc5ca628eb5c3b959f36bf8dae0d038fb2eaf2b0ffdb29586a898b723ae",
+      "export_bytes": 2719,
+      "export_sha256": "02a41cc5ca628eb5c3b959f36bf8dae0d038fb2eaf2b0ffdb29586a898b723ae",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "test-vectors/examples/signing-preimage.json",
+      "original_bytes": 2368,
+      "original_sha256": "d759c58fb83833a7c27352fec7baf88257c04748727699c8a2c997eab7542965",
+      "export_bytes": 2368,
+      "export_sha256": "d759c58fb83833a7c27352fec7baf88257c04748727699c8a2c997eab7542965",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "test-vectors/examples/state-root.json",
+      "original_bytes": 1963,
+      "original_sha256": "e712145839ed56fc6988edb4c48863c23edc80529304b1e06fa9fc3e6e020b93",
+      "export_bytes": 1963,
+      "export_sha256": "e712145839ed56fc6988edb4c48863c23edc80529304b1e06fa9fc3e6e020b93",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "test-vectors/examples/state-transition.json",
+      "original_bytes": 2674,
+      "original_sha256": "be85885f6a292dcda6f687861328e980999ffde312d5308dc03e4cfd684cde6f",
+      "export_bytes": 2674,
+      "export_sha256": "be85885f6a292dcda6f687861328e980999ffde312d5308dc03e4cfd684cde6f",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "test-vectors/examples/transaction-id.json",
+      "original_bytes": 1878,
+      "original_sha256": "6497003960f53b4f4ae27f3986d2b7f8d876c8681c25a20663d30acbfcae974d",
+      "export_bytes": 1878,
+      "export_sha256": "6497003960f53b4f4ae27f3986d2b7f8d876c8681c25a20663d30acbfcae974d",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    },
+    {
+      "path": "test-vectors/schema.json",
+      "original_bytes": 4533,
+      "original_sha256": "e4b421b8853f1332b9749a7d13a907aa2a226f8c6185e99c7950f3b7ae6957d7",
+      "export_bytes": 4533,
+      "export_sha256": "e4b421b8853f1332b9749a7d13a907aa2a226f8c6185e99c7950f3b7ae6957d7",
+      "transformation": "None; exact original bytes",
+      "provenance": "Owner-confirmed original project development; historical call evidence reviewed privately"
+    }
+  ]
+}
