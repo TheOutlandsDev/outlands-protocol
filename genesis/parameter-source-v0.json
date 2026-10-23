@@ -1,0 +1,118 @@
+{
+  "source_format": "OUT genesis parameter source v0",
+  "status": "partially_complete",
+  "not_consensus_encoding": true,
+  "ratifications": ["OUT-ID-v0", "OUT-ECON-v0", "OUT-LIMITS-v0", "OUT-TECH-v0", "genesis-timestamp-policy-v0"],
+  "shared": {
+    "chain_id_hex": "fb2651b3fba992e8836d846280745eb7a21d4962d4306858bbfb42690bde49c4",
+    "initial_consensus_version": 0,
+    "initial_transaction_version": 0,
+    "initial_p2p_protocol_version": 0,
+    "recipient_version": 0,
+    "recipient_payload_length": 32,
+    "recipient_semantics": "raw_strict_ed25519_public_key",
+    "display_decimals_non_consensus": 8,
+    "max_money_base_units": "2102400000000000",
+    "max_memo_bytes": 256,
+    "max_reward_extra_bytes": 100,
+    "max_transaction_bytes": 16384,
+    "max_transactions_per_block": 8192,
+    "max_block_body_bytes": 2097152,
+    "max_block_bytes_derived": 2097382,
+    "max_p2p_payload_bytes": 4194304,
+    "max_snapshot_body_bytes": "68719476736",
+    "max_genesis_descriptor_bytes": 65536,
+    "max_genesis_accounts": 0,
+    "max_reward_segments": 30,
+    "max_upgrade_entries": 256,
+    "max_inventory_entries": 2048,
+    "max_locator_entries": 128,
+    "max_headers": 2000,
+    "target_spacing_seconds": 60,
+    "retarget_window": 720,
+    "retarget_clamp_down": { "numerator": 1, "denominator": 4 },
+    "retarget_clamp_up": { "numerator": 4, "denominator": 1 },
+    "median_time_window": 11,
+    "max_future_drift_seconds": 7200,
+    "fee_semantics": "full_explicit_fee_no_burn_no_refund",
+    "minimum_consensus_fee_base_units": 0,
+    "reward_formula": {
+      "first_rewarded_height": 1,
+      "initial_subsidy_base_units": 500000000,
+      "era_length_rewarded_blocks": 2102400,
+      "rule": "floor(initial_subsidy / 2^floor((height-1)/era_length))",
+      "positive_eras": 29,
+      "first_zero_subsidy_height": 60969601,
+      "exact_lifetime_subsidy_base_units": "2102399972668800"
+    },
+    "upgrade_schedule": [
+      { "activation_height": 0, "consensus_version": 0, "transaction_version": 0 }
+    ],
+    "initial_accounts": []
+  },
+  "networks": {
+    "mainnet": {
+      "network_id": 1,
+      "p2p_magic_hex": "a2f22921",
+      "address_hrp": "out",
+      "genesis_timestamp": null,
+      "pow_limit_hex": null,
+      "genesis_target_hex": null,
+      "exception_flags": 0,
+      "delayed_minimum_threshold_seconds": 0,
+      "blockers": ["launch_timestamp", "reference_pow_benchmark", "launch_hashrate_assumption", "pow_limit", "genesis_target"]
+    },
+    "testnet": {
+      "network_id": 2,
+      "p2p_magic_hex": "b1e4aa74",
+      "address_hrp": "tout",
+      "genesis_timestamp": 1788048000,
+      "genesis_timestamp_utc": "2026-08-30T00:00:00Z",
+      "pow_limit_hex": "00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "genesis_target_hex": "00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "exception_flags": 2,
+      "delayed_minimum_threshold_seconds": 1200,
+      "blockers": []
+    },
+    "devnet": {
+      "network_id": 3,
+      "p2p_magic_hex": "6bb49c33",
+      "address_hrp": "dout",
+      "genesis_timestamp": 1788048000,
+      "genesis_timestamp_utc": "2026-08-30T00:00:00Z",
+      "pow_limit_hex": "000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "genesis_target_hex": "000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "exception_flags": 1,
+      "delayed_minimum_threshold_seconds": 0,
+      "blockers": []
+    }
+  },
+  "derived_outputs": {
+    "testnet": {
+      "artifact": "generated/testnet-v0.json",
+      "genesis_commitment_hex": "2a0cd6921865d4514f264cd96ed3f8fb05dba505747f7412e403560a72a7ebe6",
+      "genesis_nonce": 538190,
+      "genesis_pow_hash_hex": "00000dc9b459d2a3bd21cdcefe38e24665b6ca94a2075d3f8f0e4a529049c0b6",
+      "genesis_block_id_hex": "15a4d51b737a4e3887218b004389f5245d9a2423af17145aa4686862f050c5cb",
+      "verification_status": "independently_verified"
+    },
+    "devnet": {
+      "artifact": "generated/devnet-v0.json",
+      "genesis_commitment_hex": "baa26e3bdda0a7b3196e89367f32a9d05558ea5ea196875f30880f055e5226a7",
+      "genesis_nonce": 2757,
+      "genesis_pow_hash_hex": "00089b59cde9abecc6421d2cfd06f2abcba5c07dfcb9f3ab1c62e7c22b6b71c5",
+      "genesis_block_id_hex": "bd31ae362fa769dab143ef308f7706a7bea9ae671c8fe21793cd8200d73135c9",
+      "verification_status": "independently_verified"
+    },
+    "shared": {
+      "empty_state_root_hex": "3d30a2588a2f688edd9b29af2bb3b522db2deb731709dbfb53fadefab69c2147",
+      "empty_genesis_transaction_root_hex": "da2fb959f81d652879472f8c56076e63a2fb3587dda94754f316328e7ec43140",
+      "verification_status": "independently_verified"
+    },
+    "mainnet": {
+      "artifact": null,
+      "verification_status": "placeholder",
+      "blockers": ["launch_timestamp", "benchmark_derived_pow_limit", "benchmark_derived_genesis_target"]
+    }
+  }
+}
